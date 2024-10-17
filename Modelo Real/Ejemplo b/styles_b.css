@@ -1,69 +1,163 @@
-.sección1 {
-    display: flex;
-    justify-content: center;
-    background-color: black;
-
-    div p {
-        color: white;
-        font-weight: 500;
+header {
+    .sección1 {
+        display: flex;
+        justify-content: center;
+        background-color: black;
+    
+        div p {
+            color: white;
+            font-weight: 500;
+        }
     }
-}
-
-.sección2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #d6d6d6;
-    padding-left: 30px;
-    padding-right: 30px;
-
-    li {
-        border-right: 1px solid black;
-        padding-right: 12px;
-
+    
+    .sección2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #d6d6d6;
+        padding-left: 30px;
+        padding-right: 30px;
+    
+        li {
+            border-right: 1px solid black;
+            padding-right: 12px;
+    
+            a {
+                font-size: 0.8em;
+                font-weight: 500;
+            }
+    
+    
+        }
+    
+    }
+    
+    .sección3 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #ffffff;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-weight: 600;
+    }
+    
+    .list {
+        list-style: none;
+        display: flex;
+        gap: 15px;
+    
         a {
-            font-size: 0.9em;
+            text-decoration: none;
+            color: black;
+        }
+    
+    
+    }
+    
+    .barsearch {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    .barsearch::before {
+        content: '';
+        position: absolute;
+        background-image: url(assets/Searcher.png);
+        width: 30px;
+        height: 30px;
+        background-size: cover;
+        top: 7.5px;
+        left: 10px;
+    }
+    
+    .bar {
+        border-radius: 30px;
+        background-color: #d6d6d6;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 40px;
+    }
+
+    .cart {
+        margin-left: 10px;
+    }
+
+
+}
+main {
+    .barra-superior {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        
+        .filtros {
+            display: flex;
+
+            .parametros {
+                display: flex;
+                align-items: center;
+                padding: 10px;
+
+                .filters-icon {
+                    margin-left: 10px;
+                }
+
+                .order-icon {
+                    margin-top: 8px;
+                }
+            }
+            
         }
 
-
     }
 
-}
+    .productos {
+        background-color: white;
 
-.sección3 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #ffffff;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-}
+        
+        .fila {
+            display: flex;
+            justify-content: space-evenly;
+        }
 
-.list {
-    list-style: none;
-    display: flex;
-    gap: 15px;
+        .producto {
+            width: 575px;
+            margin-bottom: 20px;
 
-    a {
-        text-decoration: none;
-        color: black;
+            img {
+                width: 100%;
+            }
+
+            .new {
+                color: brown;
+                font-weight: 500;
+                font-size: 1.2em;
+            }
+
+            .bold {
+                font-weight: 700;
+                margin-bottom: 5px;
+                font-size: 1.1em;
+            }
+
+            .light {
+                margin-top: 5px;
+                font-size: 1.1em;
+            }
+        }
+        
+
+    
     }
 
-
+    
 }
 
-.barsearch {
-    display: flex;
-    align-items: center;
-
-}
-
-.bar {
-    border-radius: 30px;
-    background-color: #d6d6d6;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
 
