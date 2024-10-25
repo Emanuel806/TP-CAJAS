@@ -160,4 +160,115 @@ main {
     
 }
 
+footer {
+    background-color: black;
+
+    .footer {
+        display: flex;
+        
+    }
+    
+    .superior {
+        display: flex;
+        justify-content: center;
+    }
+
+    .listas {
+        display: flex;
+        margin: 30px;
+    }
+
+    .títulos {
+        color: #ffffff;
+    }
+
+    .texto {
+        color: grey;
+    }
+
+    .negrita {
+        color: #ffffff;
+        font-weight: 800;
+    }
+
+    .subrayado {
+        color: grey;
+        text-decoration: underline;
+    }
+
+    li {
+        line-height: 2.5;
+    }
+
+    a {
+        text-decoration: none;
+
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .imagen {
+        margin: 55px;
+    }
+
+    .datafiscal {
+        height: 40px;
+    }
+
+    .iconos {
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .redes {
+        display: flex;
+        gap: 5px;
+    }
+
+    .icon {
+        height: 35px;
+    }
+
+    .infoadicional {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-top: solid #d6d6d6 0.1em;
+    }
+
+    .ubicación {
+        color: #ffffff;
+        font-size: 0.8em;
+
+    }
+
+    .copyright {
+        color: grey;
+        font-size: 0.8em;
+    }
+
+    .locación {
+        display: flex;
+    }
+
+    .info {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .icono-lugar {
+        height: 20px;
+    }
+
+    .herramientas {
+        display: flex;
+        gap: 15px;
+    }
+
+}
 
