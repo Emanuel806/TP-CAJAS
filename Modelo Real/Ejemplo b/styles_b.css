@@ -1,10 +1,20 @@
+body {
+    margin: 0; /*Apliqué esta propiedad para quitarle a la página el borde vacío a los costados que viene por defecto*/
+    padding: 0;
+}
+
 header {
+
+    position: fixed; /*Apliqué esta propiedad para mantener el header fijo en la paǵina*/
+    top: 0; /*Mantiene el header en la sección superior de la página*/
+    width: 100%; /*Permite que el ancho abarque toda la página en horizontal*/
+
     .sección1 {
-        display: flex;
-        justify-content: center;
-        background-color: black;
+        display: flex; /*Permite que la disposición de los elementos sea flexible*/
+        justify-content: center; /*Centra el contenido en el eje horizontal*/
+        background-color: black; /*Establece el color de fondo*/
     
-        div p {
+        div p { /*Defino el estilo del primer párrafo*/
             color: white;
             font-weight: 500;
         }
@@ -12,17 +22,17 @@ header {
     
     .sección2 {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        justify-content: space-between; /*Alinea los elementos a lo largo del eje horizontal*/
+        align-items: center; /*Centra los elementos en el eje vertical*/
         background-color: #d6d6d6;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 30px; /*Se establece para añadir un espacio a la izquierda, acomodando el contenido para que no esté tan pegado al borde izquierdo.*/
+        padding-right: 30px; /*Se establece para añadir un espacio a la derecha, acomodando el contenido para que no esté tan pegado al borde derecho.*/
     
         li {
-            border-right: 1px solid black;
+            border-right: 1px solid black; /*Se establece una pequeña linea junto a cada elemento de la lista, separandolos*/
             padding-right: 12px;
     
-            a {
+            a { /*Se aplica estilo al texto de los elementos de la lista*/
                 font-size: 0.8em;
                 font-weight: 500;
             }
@@ -45,12 +55,12 @@ header {
     }
     
     .list {
-        list-style: none;
+        list-style: none; /*Se utiliza para quitar las viñetas a los elementos de la lista*/
         display: flex;
-        gap: 15px;
+        gap: 15px; /*Se añade un espacio junto a cada elemento de la lista*/
     
         a {
-            text-decoration: none;
+            text-decoration: none; /*Se utiliza para quitar el subrayado de los hipervinculos*/
             color: black;
         }
     
@@ -60,9 +70,9 @@ header {
     .barsearch {
         display: flex;
         align-items: center;
-        position: relative;
+        position: relative; /*Establece que la posición de la imagen variará de acuerdo a la barra de búsqueda*/
     }
-    .barsearch::before {
+    .barsearch::before { /*Se utiliza esta propiedad para colocar el icono de lupa dentro de la barra de búsqueda*/
         content: '';
         position: absolute;
         background-image: url(assets/Searcher.png);
@@ -74,7 +84,7 @@ header {
     }
     
     .bar {
-        border-radius: 30px;
+        border-radius: 30px; /*Se redondea el borde de la barra de búsqueda*/
         background-color: #d6d6d6;
         padding-top: 10px;
         padding-bottom: 10px;
@@ -82,22 +92,23 @@ header {
     }
 
     .cart {
-        margin-left: 10px;
+        margin-left: 10px; /*Se utiliza para aplicar un espacio entre la barra de búsqueda y el icono del carrito de compras.*/
     }
 
 
 }
 main {
+    padding-top: 160px; /*Se utiliza para que la sección superior del main sea visible y no sea tapada por el header*/
     .barra-superior {
         display: flex;
         justify-content: space-between;
         background-color: white;
-        padding-left: 30px;
+        padding-left: 30px; /*Se añaden espacios, para que el texto que está contenido en esa sección no esté pegado a los bordes.*/
         padding-right: 30px;
         padding-top: 15px;
         padding-bottom: 15px;
         
-        .filtros {
+        .filtros { 
             display: flex;
 
             .parametros {
@@ -105,11 +116,11 @@ main {
                 align-items: center;
                 padding: 10px;
 
-                .filters-icon {
+                .filters-icon { /*Se establecen márgenes que separan el texto y su respectivo icono*/
                     margin-left: 10px;
                 }
 
-                .order-icon {
+                .order-icon { /*Se establecen márgenes que separan el texto y su respectivo icono*/
                     margin-top: 8px;
                 }
             }
@@ -124,30 +135,30 @@ main {
         
         .fila {
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-evenly; /*Separa los elementos de cada fila, para que los espacios entre ellos sean exactamente iguales*/
         }
 
         .producto {
             width: 575px;
-            margin-bottom: 20px;
+            margin-bottom: 20px; /*Se establece un margen inferior, para separar una fila de otra*/
 
             img {
-                width: 100%;
+                width: 100%; /*Establece que el ancho de la imagen abarque la totalidad de la caja que la contiene*/
             }
 
-            .new {
+            .new { /*Se aplican estilos distintos para cada tipo de texto*/
                 color: brown;
                 font-weight: 500;
                 font-size: 1.2em;
             }
 
-            .bold {
+            .bold { /*Se aplican estilos distintos para cada tipo de texto*/
                 font-weight: 700;
                 margin-bottom: 5px;
                 font-size: 1.1em;
             }
 
-            .light {
+            .light { /*Se aplican estilos distintos para cada tipo de texto*/
                 margin-top: 5px;
                 font-size: 1.1em;
             }
@@ -163,72 +174,72 @@ main {
 footer {
     background-color: black;
 
-    .footer {
+    .footer { /*Establezco clases para abarcar distintas partes del footer*/
         display: flex;
         
     }
     
-    .superior {
+    .superior { /*Contiene las listas, la imagen y los iconos de las redes sociales*/
         display: flex;
-        justify-content: center;
+        justify-content: center; /*Centra el contenido en el eje horizontal*/
     }
 
     .listas {
         display: flex;
-        margin: 30px;
+        margin: 30px; /*Aplico márgenes a la caja que contiene las listas, separándola de otras.*/
     }
 
-    .títulos {
+    .títulos { /*Se aplican estilos distintos para cada tipo de texto*/
         color: #ffffff;
     }
 
-    .texto {
+    .texto { /*Se aplican estilos distintos para cada tipo de texto*/
         color: grey;
     }
 
-    .negrita {
+    .negrita { /*Se aplican estilos distintos para cada tipo de texto*/
         color: #ffffff;
         font-weight: 800;
     }
 
-    .subrayado {
+    .subrayado { /*Se aplican estilos distintos para cada tipo de texto*/
         color: grey;
         text-decoration: underline;
     }
 
     li {
-        line-height: 2.5;
+        line-height: 2.5; /*Se ajusta la altura de cada línea de la lista*/
     }
 
     a {
-        text-decoration: none;
+        text-decoration: none; /*Se utiliza para quitar el subrayado de los hipervinculos*/
 
     }
 
     ul {
-        list-style: none;
+        list-style: none; /*Se utiliza para quitar las viñetas a los elementos de la lista*/
     }
 
     .imagen {
-        margin: 55px;
+        margin: 55px; /*Aplico márgenes a la caja que contiene la imagen de data fiscal, separándola de otras.*/
     }
 
     .datafiscal {
-        height: 40px;
+        height: 40px; /*Le aplico una altura específica a la imagen*/
     }
 
-    .iconos {
+    .iconos { /*Se establece un espaciado dentro y fuera de la caja que contiene los iconos de las redes sociales*/
         padding: 20px;
         margin-top: 20px;
     }
 
     .redes {
         display: flex;
-        gap: 5px;
+        gap: 5px; /*Se añade un espacio junto a cada icono de red social*/
     }
 
     .icon {
-        height: 35px;
+        height: 35px; /*Se establece una altura determinada para cada icono de red social*/
     }
 
     .infoadicional {
@@ -236,17 +247,17 @@ footer {
         align-items: center;
         justify-content: space-between;
         padding-left: 30px;
-        padding-right: 30px;
-        border-top: solid #d6d6d6 0.1em;
+        padding-right: 100px;
+        border-top: solid #d6d6d6 0.1em; /*Se añade una línea blanca sobre el contenido inferior, separándolo del de arriba */
     }
 
-    .ubicación {
+    .ubicación { /*Se aplican estilos distintos para cada tipo de texto*/
         color: #ffffff;
         font-size: 0.8em;
 
     }
 
-    .copyright {
+    .copyright { /*Se aplican estilos distintos para cada tipo de texto*/
         color: grey;
         font-size: 0.8em;
     }
@@ -258,17 +269,27 @@ footer {
     .info {
         display: flex;
         align-items: center;
-        gap: 20px;
+        gap: 20px; /*Se aplica un espacio entre la ubicación y el texto de copyright*/
     }
 
     .icono-lugar {
-        height: 20px;
+        height: 20px; /*Se establece una altura específica para el icono de ubicación*/
     }
 
     .herramientas {
         display: flex;
-        gap: 15px;
+        gap: 15px; /*Se aplica un espacio entre cada una de las herramientas*/
+    }
+
+    .redsocial {
+        position: fixed; /*Se fija el icono de Whatsapp en la esquina inferior derecha de la página web.*/
+        bottom: 15px;
+        right: 15px;
+        padding: 10px;
+    }
+
+    .whatsapp {
+        width: 50px; /*Se establece un ancho específico para el icono de Whatsapp*/
     }
 
 }
-
