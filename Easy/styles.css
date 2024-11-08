@@ -1,0 +1,79 @@
+.main_pagina-principal_producto {
+    border-radius: 15px;
+    border: solid 1px black;
+    width: 500px;
+    background-color: white;
+}
+
+.producto-favorito {
+    margin-left: 410px;
+    margin-top: 5px;
+    
+}
+
+.producto-cuotas-1 {
+    background-color: dodgerblue;
+    border-radius: 15px;
+    width: 100px;
+    padding: 5px;
+    position: relative;
+    left: 0;
+    
+
+    div {
+        color: white;
+        font-weight: 900;
+    }
+
+    .producto-cuotas-txt1 {
+        margin-bottom: -10px;
+        padding-left: 3px;
+        font-size: 0.65em;
+    }
+
+    .producto-cuotas-2 {
+        display: flex;
+
+        .producto-cuotas-txt2 {
+            font-size: 2.1em;
+
+        }
+    }
+
+    .producto-cuotas-3 {
+        margin-left: 3px;
+        align-items: center;
+        padding-top: 5px;
+    }
+
+    .producto-cuotas-txt3 {
+        font-size: 0.9em;
+    }
+
+    .producto-cuotas-txt4 {
+        font-size: 0.9em;
+        margin-top: -5px;
+    }
+
+    
+}
+.main_pagina-principal_producto-info {
+    
+    div {
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+}
+.producto-especificaciones {
+    margin-bottom: 20px;
+}
+.producto-marca {
+    font-weight: 900;
+}
+.producto-valor {
+    display: flex;
+}
+
+.producto-descuento {
+    
+}
