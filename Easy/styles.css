@@ -21,6 +21,11 @@ body {
     display: flex;
     justify-content: right;
     margin-top: 5px;
+
+    a {
+        margin-top: 15px;
+        margin-right: 15px;
+    }
     
 }
 
